@@ -98,3 +98,71 @@ while(low<=high){
 	
 	
 }
+
+
+
+void bubble_sort(int* x, int size ){
+	
+int temp=0;
+for(int i =0; i< size; i++)
+	{
+	
+	
+      for(int j = 0; j<(size-i); j++)
+	{
+	
+	
+      if((*(x+j))>(*(x+j+1)))
+	  {
+	    temp =*(x+j);
+	   *(x+j)= *(x+j+1);
+	   *(x+j+1)= temp;
+	    
+	  }
+	
+	
+	}
+	  
+	     
+	  
+	}
+
+
+
+
+
+}
+
+
+
+void insert_two_array( int array_1[], int array_2[], int size ){
+	
+	
+	int temp=0;
+	int j=0;
+	for(int i=0; i<=10; i++){
+		
+	     ++j;
+		temp=array_1[i+j];
+		array_1[i+j]=array_2[i];
+		
+		array_1[i+j+1]=temp;
+		
+		//array_1[j+2]=temp;
+		/*if((i+1)==20){
+			
+			break;
+		}*/
+		}
+	
+	for(int i=0; i<10;i++){
+		
+		printf("%d",array_1[i]);
+		
+		
+	}
+	
+	
+	
+	
+}
